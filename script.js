@@ -93,23 +93,23 @@ function showQuestion() {
                 if (val <= 20) {
                     text = '"Honestly, it’s been a heavy day."';
                     response = "Drop everything and talk to me. I'm not asking, I'm telling you 😾!";
-                    imgSrc = "imgs/sad.jpg";
+                    imgSrc = "./imgs/sad.jpg";
                 } else if (val <= 40) {
                     text = '"Just trying to get through the day."';
                     response = "Text me RIGHT NOW. I’m waiting, don’t make me come find you!";
-                    imgSrc = "imgs/v_sad.jpg";
+                    imgSrc = "./imgs/v_sad.jpg";
                 } else if (val <= 60) {
                     text = '"Not great, not bad. I’m just here."';
                     response = "Neutral? No way. Tell me what's actually on your mind RIGHT NOW!";
-                    imgSrc = "imgs/okay.jpg";
+                    imgSrc = "./imgs/okay.jpg";
                 } else if (val <= 80) {
                     text = '"I’m feeling light and peaceful."';
                     response = "I love this! Now tell me what happened? I want details!";
-                    imgSrc = "imgs/good.jpg";
+                    imgSrc = "./imgs/good.jpg";
                 } else {
                     text = '"My heart is truly happy right now."';
                     response = "Awww >ω< I love seeing you happy!";
-                    imgSrc = "imgs/happy.jpg";
+                    imgSrc = "./imgs/happy.jpg";
                 }
 
                 status.innerHTML = `${text}<br><span style="font-size: 0.80rem; color: #9A86A4; font-weight: bold;">${response}</span>`;
@@ -158,11 +158,11 @@ function finish(choice) {
     btnGroup.style.display = 'none';
 
     if (choice === 'yes') {
-        memeImg.src = "/imgs/judge.jpg";
+        memeImg.src = "./imgs/judge.jpg";
         msgText.innerHTML = "HEHE, i knew it! You better choose definitely next time!";
         backBtn.style.display = 'inline-block';
     } else {
-        memeImg.src = "imgs/shy.jpg";
+        memeImg.src = "./imgs/shy.jpg";
         msgText.innerHTML = "Aww >ω<, I miss you more! <br>";
         nextBtn.style.display = 'inline-block';
     }
@@ -217,7 +217,7 @@ function checkTyping(el) {
         successMsg.innerHTML = "Congratulations! You win a virtual hug 🫵🏼✨";
         successMsg.style.display = 'block';
         errorMsg.style.display = 'none';
-        succImg.src = "/imgs/hug.jpg";
+        succImg.src = "./imgs/hug.jpg";
         succImg.style.display = 'block';
         el.style.borderColor = "#2ecc71";
         el.style.color = "#2ecc71";
