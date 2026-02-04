@@ -64,7 +64,8 @@ function showQuestion() {
 
     setTimeout(() => {
         container.innerHTML = `
-            <h1 class="hero-text" id="question-title"></h1>
+            
+            <h1 class="hero-text" id="question-title" style="margin-top:15px;"></h1>
             <div id="slider-container" style="opacity: 0; transition: opacity 0.8s ease;">
                 <div class="range-markers">
                     <span></span><span></span><span></span><span></span><span></span>
