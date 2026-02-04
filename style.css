@@ -381,10 +381,10 @@
             }
 
             .btn {
-                width: 100%;
-                max-width: 250;
-                padding: 12px 20px;
                 font-size: 0.9rem;
+                width: 50%;
+                padding: 10px 15px;
+                font-size: 0.8rem;
             }
 
 
@@ -522,7 +522,8 @@
             }
         }
 
-        /* Small Mobile (up to 480px) */
+        /* 
+        /*s Small Mobile (up to 480px) *s/
         @media (max-width: 480px) {
             .hero-text {
                 font-size: 1.6rem;
@@ -620,4 +621,4 @@
 
 
 
-        }
+        } */
